@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+ </div>
+ <app-game-control (incremented)="insertItem($event)"></app-game-control>
+
+ <div>
+   <app-odd [result]="item" *ngFor="let item of oddList"></app-odd>
+ </div>
+ <div>
+  <app-even [result]="item" *ngFor="let item of evenList"></app-even>
+</div>
+
+
